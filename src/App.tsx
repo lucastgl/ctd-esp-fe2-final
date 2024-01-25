@@ -1,5 +1,6 @@
 import React from "react";
 import Cita from "./features/quote/Cita";
+import NoticiasProvider from "./features/news/context/NoticiasContext";
 import "./App.css";
 import Bio from "./features/bio/Bio";
 import Noticias from "./features/news/Noticias";
@@ -17,10 +18,12 @@ function App() {
       </header>
       <section className="App-bio">
         <Bio />
-      </section>
+      </section>      
       <section className="App-news">
+      <NoticiasProvider>
         <Noticias />
-      </section>
+      </NoticiasProvider>
+      </section>      
     </div>
   );
 }
