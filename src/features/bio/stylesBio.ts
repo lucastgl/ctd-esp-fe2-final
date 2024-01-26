@@ -1,5 +1,4 @@
 import styled from "styled-components";
-/*Contenedor Principal Bio*/
 export const ContenedorBio = styled.div`  
   display: flex;
   flex-direction: column;
@@ -8,7 +7,7 @@ export const ContenedorBio = styled.div`
   width: 100%;
   height: 100%;
 `;
-/*Contenedor Botones */
+
 export const ContenedorBotones = styled.div`
   display: flex;
   flex-direction: row;
@@ -18,7 +17,6 @@ export const ContenedorBotones = styled.div`
   margin-bottom: 1rem;
 `;
 
-/*Botón dinámico */
 interface BotonProps {
     isActive: boolean;
 }
@@ -50,18 +48,18 @@ export const BotonBio = styled.button<BotonProps>`
         cursor: pointer;
       }
 `;
-/*Imagen */
+
 export const Imagen = styled.img`
   max-width: 200px;
   max-height: 300px;
   margin-bottom: 1rem;
 `;
-/*Titulo de personaje*/
+
 export const Titulo = styled.h3`
   font-size: 2em;
   margin-bottom: 1rem;
 `;
-/*Bio - descripcion del personaje*/
+
 export const Descripcion = styled.p`
   font-size: 1.3em;
   width: 70%;
